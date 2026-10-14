@@ -9,7 +9,8 @@ programme's assay and analysis reference.
 Give me your recommendation on what to carry forward and what to run next,
 written up as the proposal I will take to the board. Start with what the current
 data establish about the candidate and where they fall short, then the studies
-that follow from it, and a realistic plan for how the regimen would be deployed.
+that follow from it, and a realistic account of what the dosing schedule would
+mean for implementing the regimen in a preparedness setting.
 
 Put your lead recommendation on the first line of `/outputs/recommendation.md`,
 then the proposal itself, every number you relied on with the file it came from,

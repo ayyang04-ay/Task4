@@ -81,3 +81,16 @@ supplement.pdf sha256 (first16): 637a9202fd30641e  | 1014 pages
 - Record both RLS IDs (short pu3h8f5d / URL task_c2c052107551483abaacb5845479f32e)
   in the task; confirm the Golden earns full marks under its own guidelines on a
   live grade.
+
+## Prompt edit (2026-10-14) + Phase 5 audit
+- task_prompt.txt: "...a realistic plan for how the regimen would be deployed" ->
+  "...a realistic account of what the dosing schedule would mean for implementing
+  the regimen in a preparedness setting." Lowers T&S refusal surface (pandemic-
+  pathogen + "deploy") while making the two-dose-vs-one-dose implementation cue
+  more explicit; no A/B/C item keys on the removed wording.
+- Phase 5 audit round 1: hard categories (answer not forced / correct answer
+  penalized / rule leaked / wrong answer rewarded) all clear. Five mechanical
+  flags all resolved as false positives (line-wrap/case/length in the checker):
+  bridge verbatim, accounting keyed on reproduction, both report-vs-elevate
+  guards present, all 7 A items cite a file. Audit terminates clean; prompt edit
+  covered by diff-scoped pass. Calibration must run on this edited prompt.
