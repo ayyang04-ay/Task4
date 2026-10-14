@@ -3,7 +3,7 @@
 RLS short ID: pu3h8f5d
 RLS URL ID:   task_c2c052107551483abaacb5845479f32e
 Campaign:     camp_0589d1e96758477586df0e43dd8eeec1
-Branch:       claude/nice-cori-69c2j3
+Branch:       claude/elegant-mccarthy-uk0tco  (shipped; prior nice-cori-69c2j3 was never committed)
 
 ## Source
 - Creech et al., Front Immunol 2026, DOI 10.3389/fimmu.2026.1786231 (EXCLUDED from room; context only).
@@ -63,6 +63,11 @@ invites the over-reach), survives the full-supplement dump.
 - Full supplement PDF, verbatim datadump (acceptable under the ISG reframe).
 - Registry: trimmed JSON, results + arms/design modules; scrubbed of the
   publication reference, interpretive description text, and largeDoc links.
+  As shipped the scrub also removed statusModule (real dates),
+  sponsor/oversight/contactsLocations, derivedSection, and
+  resultsSection.moreInfoModule — all bridges to the excluded Creech paper
+  (PI contact) or unneeded; kept identification/conditions/design/arms/
+  eligibility + all 15 outcome measures. Leak assertions in validation_log.md.
 - Dossier: authored conventions layer only (no conclusions); carries the
   reference-frame fact and the absence anchors.
 - Paper: NOT mounted (states its own conclusions — strip-wall fail).
@@ -70,3 +75,18 @@ invites the over-reach), survives the full-supplement dump.
 ## Panel calibration
 16 independent API samples at T=0.7-1.0. NOT subagent fanout. Target mean <0.55;
 bimodal high/low split is the working signature.
+
+## As-shipped reconciliation (2026-10-14)
+- Prompt revised twice after spine: deployment clause softened
+  ("...plan for how the regimen would be deployed" -> "...account of what the
+  dosing schedule would mean for implementing the regimen in a preparedness
+  setting") to cut T&S refusal surface while keeping the two-dose compliance cue;
+  user's final edit also changed "will mislead" -> "may mislead" and the lock
+  line to "All files are up to date as of today." task_prompt.txt is the shipped
+  text.
+- grader_prompt.md reflowed to flat lines (content identical, A/B/C headers
+  standalone). Old B10 deleted and absence-anchor #12 dropped per the ISG reframe
+  above; grader grades proxy-of-proxy restraint, not signature surfacing.
+- Phase 5 audit clean (no hard findings). Full world-gate / scrub / supplement
+  grounding / statics / three-axis record in reviewer_data/validation_log.md.
+- Status at handoff: pushed to pilot; awaiting the 16-sample run.
