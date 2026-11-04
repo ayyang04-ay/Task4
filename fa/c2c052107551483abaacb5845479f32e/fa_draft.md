@@ -1,58 +1,53 @@
-# FA draft v3 — H7N9 next-work recommendation, job 30f4652b (16 × Opus 5.5)
+# FA draft v4 — H7N9 next-work recommendation, job 30f4652b (16 × Opus 5.5)
 
-RETYPE, DO NOT TRANSCRIBE. House format from Task jp2x8c9f: A-item indexed, prevalence per item,
-non-discriminating items dismissed, second paragraph anchored on exemplar runs.
-MODEL-SIDE ONLY. All grading-document and reference-solution findings are excluded by instruction and
-live in calibration.md; nothing below asserts anything about how the runs were scored.
-LABELS: this task's grading document uses A1–A7 for *items*, so trajectories are "run NN (hex)".
-Counts: paragraph 1 = 12 sentences, paragraph 2 = 10 sentences. Evidence in error_modes.md / item_matrix.md.
+RETYPE, DO NOT TRANSCRIBE.
+SCOPE: model conduct only, load-bearing failures only, anchored on the two weakest runs — 03 (890bbf23) and
+05 (b07ef105), both 0.77 — and the median pair, 09 (9687c0b1) and 11 (60c1bbbc), both 0.84.
+CUT BY INSTRUCTION as immaterial, and retained in error_modes.md: the comparator-arm keratin/hornerin
+contamination never being characterised (13/16, no run misused it); "time to protection" treated as
+trial-measurable (4/16); run 12's antigen-sparing over-claim (1/16). All grading-document and
+reference-solution findings remain in calibration.md and are not referenced here.
+Counts: paragraph 1 = 11 sentences, paragraph 2 = 9 sentences.
 
 ## What did the model do wrong?
 
-The task is built on 7 A pillars, and on model conduct one of them discriminates. **A6** requires both restraint
-against elevating the interferon signature and a statement that the trial measured no protection endpoint; all 16
-runs pass the restraint and 15/16 fail the statement. Only run 16 (9993e8bb) states that the record contains
-immunogenicity only, and it does so in a set-aside cell rather than in its account of where the data fall short.
-Eight runs (01, 02, 06, 07, 11, 12, 13, 15) substitute the weaker claim that no correlate of protection is
-established, which concerns how to read a titre rather than what the trial measured, and the remaining seven (03,
-04, 05, 08, 09, 10, 14) state neither. The cost is that where a bridging study is proposed, it rests on a
-structural fact the proposal never states. The second and more widespread defect is a basis error rather than a
-wrong answer: 13/16 compare differentially expressed gene counts across the dose-1 and dose-2 boundary without
-ever discharging the reference-frame convention, which the room states twice — in `dossier.md` §6 and again in the
-registry's own description of the DE-count outcome measure. The conclusion those runs reach is sound, the innate
-response being larger after dose 2, and all 16 cite the IP-10 fold change of 4.461 against 1.867, which rests on a
-single pre-vaccination baseline; but a stated convention bearing directly on the comparison is left unaddressed in
-13 proposals, and only runs 04, 09 and 14 name it. Third, 13/16 never characterise the comparator-arm
-differential-abundance tables: only runs 06, 13 and 16 identify the keratin and hornerin features as skin and
-handling contamination. No run misuses them as vaccine biology, so this cost nothing, but the one systems-biology
-artifact in the room was explained in three proposals out of sixteen. Fourth, 4/16 (04, 07, 09, 10) treat time to
-protection as a quantity the trial measures or that a next study could shorten, which in run 07 (06a4976d) sits
-against its own statement that no protective titre is established. One run over-claims on antigen content: run 12
-(1596ccf2) states that the two-dose regimen uses half the HA of the 15 µg comparator and therefore saves antigen,
-although that comparator is A/H3N2v, a different subtype, and the record holds no H7N9 dose-ranging arm. **A1,
-A2, A4, A5 and A7** — configuration attribution, two-dose necessity, the durability and breadth gaps, and
-provenance with a set-aside section — are met in all 16 and are not discriminating.
+The weight of this task sits in attribution and in naming what the data cannot support, and on the first of those
+all 16 runs land it: every one carries forward the AS03-adjuvanted two-dose configuration rather than the antigen,
+and every one names durability and breadth as unestablished. One load-bearing element fails across the panel.
+**A6** requires both restraint against elevating the interferon signature and a statement that the trial measured
+no protection endpoint; all 16 pass the restraint, and 15/16 omit the statement. The two weakest runs, 03
+(890bbf23) and 05 (b07ef105), state neither that the record holds no protection endpoint nor that no correlate of
+protection is established. The median pair divides: 09 (9687c0b1) also states neither, while 11 (60c1bbbc)
+asserts only the weaker claim that no correlate is established, which concerns how to read a titre rather than
+what the trial measured. Only run 16 (9993e8bb) states that the record contains immunogenicity only, and it
+places that in a set-aside cell rather than in its account of where the data fall short. Every one of these
+proposals recommends a bridging or correlate-of-protection study, so in 15 of 16 that recommendation rests on a
+structural fact the proposal never puts on the page. The second failure is one of basis rather than conclusion:
+13/16 compare differentially expressed gene counts across the dose-1 and dose-2 boundary without discharging the
+reference-frame convention, which the room states twice, in `dossier.md` §6 and again in the registry's own
+description of the DE-count outcome measure. The conclusion is sound and all 16 runs cite the IP-10 fold change of
+4.461 against 1.867 on a single pre-vaccination baseline, so this is not a wrong answer. It matters because the
+claim carries into decisions: run 03 at line 137 makes dose-2 reactogenicity a measurement requirement on that
+basis, and run 05 at line 231 concludes that dose 2 is unlikely to be gentler. In both of the weakest runs a
+design or deployment recommendation therefore rests on a derivation whose stated convention was never addressed,
+and only runs 04, 09 and 14 address it anywhere.
 
 ## What should the model have done?
 
-No run satisfies all 7 pillars; run 16 (9993e8bb) comes closest on the discriminating item and run 14 (f8782a66)
-models the handling of the second. **A6:** the correct move is to state the inventory fact outright: all 15
-outcome measures in the registry record are serological, cytokine or transcriptomic, none is a protection,
-efficacy or challenge endpoint, and that absence — not the weakness of any particular titre — is the gap a
-bridging study exists to close. Run 16 is the only one to state it, and it belongs in the account of where the
-data fall short rather than in a set-aside table; stating it converts the restraint all 16 runs already exercised
-into a conclusion the proposal has earned, and it is what licenses the correlate-of-protection study the prompt
-asks for. **The cross-dose comparison:** run 14 shows the complete handling: it names the differing baselines,
-argues that the dose-2 convention would if anything reduce the number of genes called, and corroborates the
-direction with cytokine fold changes on a common baseline. Run 09 (9687c0b1) adds the power argument, that dose 1
-drew on two baseline samples and so had more power rather than less. Either route discharges the convention in one
-sentence and leaves the conclusion exactly where it already stood. The room supports it directly: Day 29 measured
-against the first-dose baseline gives 11 DE genes across all six cell types against a Day-2 peak of 3,024, so the
-dose-2 reference draw is indistinguishable from pre-vaccination. **The comparator proteomics:** the dossier's
-sequence-cluster convention at section 7 and the HRNR and KRT features together identify the contamination at no
-analytic cost, and the deployment parameter should be stated as days to a documented serological response rather
-than time to protection. **Antigen content:** the supportable claim is the narrower one — AS03 is necessary at
-3.75 µg, since the unadjuvanted arm returns 0/10 seroconversion and floor-level titres, while sparing relative to
-a higher unadjuvanted A/H7N9 dose is untested in this study — which 15 of 16 runs correctly confined. **A1, A2, A4, A5, A7:** already met in every run: carry forward the adjuvanted two-dose configuration rather than the
-antigen, treat the Day-29 one-dose HAI GMT of 7.3 as sub-protective, name durability and breadth as unestablished,
-and tie every number to its file alongside a reasoned set-aside section.
+Run 16 (9993e8bb) is the exemplar for the load-bearing item and run 14 (f8782a66) for the second. **A6:** the
+correct move is to state the inventory fact outright — all 15 outcome measures in the registry record are
+serological, cytokine or transcriptomic, none is a protection, efficacy or challenge endpoint, and that absence,
+not the weakness of any particular titre, is the gap a bridging study exists to close. It belongs in the account
+of where the data fall short, a section each of 03, 05, 09 and 11 already carries, rather than in a set-aside
+table. Stating it converts the restraint all 16 runs already exercised into a conclusion the proposal has earned,
+and it is what licenses the correlate-of-protection study each of them recommends. **The cross-dose comparison:**
+run 14 shows the complete handling, naming the differing baselines, arguing that the dose-2 convention would if
+anything reduce the number of genes called, and corroborating the direction with cytokine fold changes on a common
+baseline. Run 09 adds the power argument, that dose 1 drew on two baseline samples and so had more power rather
+than less. The room supports either route directly: Day 29 measured against the first-dose baseline gives 11 DE
+genes across all six cell types against a Day-2 peak of 3,024, so the dose-2 reference draw is indistinguishable
+from pre-vaccination. One sentence of that reasoning discharges the convention and leaves both the conclusion and
+the decisions 03 and 05 build on it exactly where they stood. Everything else load-bearing was already right in
+every run: the adjuvanted configuration as the asset rather than the antigen, the Day-29 one-dose HAI GMT of 7.3
+treated as sub-protective, durability and breadth named as unestablished, and every number tied to the file it
+came from alongside a reasoned set-aside section.
