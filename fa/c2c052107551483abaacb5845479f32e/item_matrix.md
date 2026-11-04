@@ -47,3 +47,29 @@ The B5 row is the one the score ordering is built on, and it inverts: attempt 08
 real error"; attempt 14 (0.88) was told the same conduct "does not fire". Both compared DE counts across the
 boundary; attempt 14 named the convention and attempt 08 did not, so the severity tracks whether the attempt
 *mentioned* the convention, not whether its conclusion was sound. Both conclusions were sound.
+
+## Grader verdict vs verified conduct
+
+"Verified" = checked by me against the 16 graded `recommendation.md` files and, where a value is involved,
+recomputed from `data_room/registry_results.json`. Where the two columns disagree, the reason is in the right column.
+
+| Item | Grader: correct | Grader: error/partial | Verified: correct | Verified: error | Why they differ |
+|---|---|---|---|---|---|
+| A1 attribution to adjuvanted configuration | 16 | 0 | **16** | 0 | — line 1 of all 16 names AS03/adjuvant |
+| A2 two-dose necessity | 16 | 0 | **16** | 0 | — all 16 cite the Day-29 GMT 7.3 |
+| A3 dose-sparing as quarter of 15 µg | 3 | 13 | **16** | 0 | Item unsound: only 15 µg arm is A/H3N2v, a different subtype; no H7N9 dose-ranging. Declining the comparison is correct |
+| A4 durability gap | 16 | 0 | **16** | 0 | — |
+| A5 breadth gap | 16 | 0 | **16** | 0 | — |
+| A6 protection endpoint / signature restraint | 10 | 6 | **1** | 15 | Splits in two. Restraint (don't elevate the signature): 16/16 correct. Endpoint-inventory statement: 1/16 (attempt 16 only). Graders scored a blend of the two |
+| A7 provenance + set-aside | 16 | 0 | **16** | 0 | — all 16 carry a sourced ledger and a set-aside section |
+| B1 unadjuvanted carry-forward | 16 avoided | 0 | **16** | 0 | — |
+| B2 single dose sufficient | 16 avoided | 0 | **16** | 0 | — |
+| B3 signature elevated to surrogate | 16 avoided | 0 | **16** | 0 | — the only textual hits are negations and set-aside rows |
+| B4 keratin/hornerin as biology | 16 avoided | 0 | **16** | 0 | Avoided 16/16, but only 3/16 identify it as contamination (ledger M2) |
+| B5 cross-dose DE comparison | 3 avoided | **13 fired** | **16** | 0 | Item's refuting fact is neutralised by the room, and its wording penalises a direction no attempt argued. Residual real defect: 13/16 did not discharge the stated convention |
+| B6 cross-cell-type loading | 16 avoided | 0 | **16** | 0 | — |
+| B7 H3N2v recall / 1.4× as merit | 16 avoided | 0 | **16** | 0 | — |
+
+**Totals.** Grader: 204 correct / 32 error-or-partial across 14 items × 16 trajectories (236 cells).
+Verified: 221 correct / 15 error. The 32 recorded failures reduce to 15, all on one item (A6), and 13 of the
+recorded failures (B5) reduce to zero outright.
