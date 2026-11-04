@@ -55,3 +55,45 @@ was flatly false.
 The claim that supplement figures S43–S58 are physically absent, and that the Golden scored 0.78 submitted as a
 deliverable, comes from the Taiga env linter and from run and grader statements. Multiple runs and graders assert
 the page gap independently, but I did not render the PDF myself. It is in calibration.md, not in the FA.
+
+---
+
+# Audit pass 2 — adversarial re-test, targeting my own error pattern
+
+Pass 1 found that my errors came from patterns tight enough to yield a clean count, and from unchecked
+generalisations. Pass 2 therefore re-tested every "every run…" claim across all 16, and re-ran each count with
+deliberately looser patterns.
+
+## FAILED again — the pass-1 correction was itself wrong
+
+| Claim | Verdict | What is true |
+|---|---|---|
+| Pass 1 corrected #2 to: "03, 04, 11 and 13 set aside field efficacy and human challenge and put nothing in their place, so in those four the protection gap is neither stated nor worked." | **WRONG — over-corrected** | **All 16 do this.** Every run places field efficacy and/or human challenge in a set-aside section: 01 `:327,:337`, 02 `:186`, 03 `:391–392`, 04 `:186`, 05 `:342`, 06 `:390`, 07 `:234`, 08 `:354`, 09 `:330`, 10 `:429`, 11 `:368`, 12 `:308`, 13 `:240`, 14 `:433`, 15 `:234`, 16 `:304`. None proposes protection-closing work. Only 06 (`:391`, conditional on regulators), 09 (`:330`, "the route is immunobridging") and 12 (`:308`, "can wait for pivotal planning") mention a nonclinical or bridging route at all. |
+
+Cause: my pass-1 screen counted the presence of keywords like "bridging" or "challenge study" as evidence that a
+run *proposed* such work. Those keywords sit in set-aside rows that say the opposite. I read a keyword hit as a
+proposal without opening the row. This is the same failure as #1 and #2 — a pattern standing in for reading —
+and it produced a tidy four-run finding where the truth is uniform across the panel.
+
+## Also narrowed
+
+| Claim | Verdict | What is true |
+|---|---|---|
+| "the Day-29 one-dose HAI GMT of 7.3 read as sub-protective" in every run | **Overstated** | All 16 cite 7.3 and all 16 reject single-dose use, but the explicit "sub-protective / below 1:40" framing co-occurs with the number in only 8. The others read it as a floor or non-response (15 `:15` "below the 1:10 detection limit"). Draft now says "treated as insufficient and single-dose use rejected", which holds for all 16. |
+
+## PASSED on re-test
+
+| Claim | Check |
+|---|---|
+| "which every run has" — a where-the-data-fall-short section | All 16, by heading: 01 `:87`, 02 `:70`, 03 `:109`, 04 `:49`, 05 `:118`, 06 `:133`, 07 `:71`, 08 `:167`, 09 `:102`, 10 `:91`, 11 `:26/:89`, 12 `:74`, 13 `:82`, 14 `:89`, 15 `:103`, 16 `:115` |
+| No run elevates the signature to a correlate or surrogate | Adversarial sweep returned 6 candidates; all 6 are set-aside row titles naming the option being rejected (02 `:182`, 03 `:389`, 05 `:340`, 08 `:350`, 10 `:428`, 16 `:15` under "Stop (as a decision tool)"). Restraint holds 16/16, established by reading the rows, not by pattern |
+| "every figure tied to its source" — a provenance table in all 16 | All 16. Runs 09 `:253` and 10 `:321` first read as absent because they title it "with the file it came from" rather than "with source" — another false negative of the same kind |
+| Every run rejects single-dose use | All 16 address it; explicit rejections e.g. 11 `:49` "no support for a single-dose regimen at this formulation", 16 `:57` "A single-dose use of this formulation is not supported" |
+| Run 14's handling carries all three clauses in the deliverable | `:64` verbatim: "This is not an artefact of the baseline: dose-2 comparisons use a single Day-29 draw, while dose-1 comparisons average two draws (DOS §6). That difference would, if anything, reduce the number of genes called after dose 2, and the cytokines below show the same amplification." |
+| 14/16 never state the endpoint-inventory fact | Re-stressed with a net keyed on measures/endpoints/record rather than titres; surfaced run 08 in pass 1 and nothing further in pass 2 |
+
+## Status
+
+Four errors found across two passes, all of mine, all running the same way: a pattern substituted for reading, and
+every time the pattern produced a cleaner finding than the truth. Pass 2 found one new failure and it was in the
+pass-1 correction itself, which is the strongest argument for the third pass rather than for declaring this clean.
