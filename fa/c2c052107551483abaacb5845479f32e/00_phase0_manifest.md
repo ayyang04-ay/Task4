@@ -7,9 +7,9 @@ single holistic score, no sub-items; A/B item ids must be assigned by FA, not re
 | Row | Status | Detail |
 |---|---|---|
 | Run export located | PASS | Uploaded zip and `run data/Anton_...job_30f4652b_2026-10-14.zip` are the **same** export (byte-identical except README.md and grader_files_manifest.json, both metadata-only wording/field diffs). No second half exists. |
-| Export complete | **FAIL (waiver needed)** | `export_selection.included = [transcripts, grading]`; `excluded = [outputs, task_files, grader_files]`. Both archives carry the identical selection, so `outputs/` (the graded `recommendation.md`) is **not in the bundle**. |
+| Export complete | **PASS (resolved)** | Archives 1 and 2 carried `included = [transcripts, grading]`. A third archive, supplied after this manifest was first written, carries `included = [outputs]` — all 16 `outputs/attempt_NN_*/recommendation.md` plus 24–47 supporting files each. Transcripts + grading + outputs are therefore all in hand; only `task_files` (substituted from the repo, byte-verified) and `grader_files` (substituted by `grader/grader_prompt.md`, verified identical) remain excluded. |
 | Clusters present | PASS | No `_ERROR.txt`; transcripts 16/16, grading 16/16. `metadata.grading_transcript` is **null** in all 16 despite the README promising it. |
-| Trajectory IDs | **BLOCKED** | Export labels: `attempt_NN_<8hex>`; `all_runs.json` carries full run uuids. Hub display form not known — must come from the writer, not be constructed. |
+| Trajectory IDs | **PASS (resolved)** | Hub displays `attempt NN` beside the 8-hex short run id (e.g. `attempt 01` / `cd3e5696`). Cite as `attempt 01 (cd3e5696)`. |
 | Run count and status | PASS | 16/16 `completed`, `from_episode`; 0 refused; 0 truncated; 0 T&S. Scores 0.77–0.92, mean 0.8375. |
 | Data room | PASS (substituted) | `task_files/` excluded from export, but the repo ships the shipped room: `data_room/{task_prompt.txt,dossier.md,registry_results.json,supplement.pdf}`. Transcript tool results show `/tmp/world/filesystem` sizes 5490 / 395410 / 11316320 — exact match to the repo bytes, so the room as the runs saw it is in hand. `supplement.pdf` sha256(first16) 637a9202fd30641e per validation_log. |
 | Grading document | PASS | See above. |
@@ -32,11 +32,12 @@ to be the graded final state.** Citations must therefore anchor to transcript ev
 (`attempt_NN_<hex>` + event index in the flattened stream) or to verbatim strings, not to deliverable
 line numbers.
 
-## Blockers for the writer to clear before Phase 1
+## Blockers — status
 
-1. **Trajectory ID form** — verbatim as the Hub shows it.
-2. **Waive or fix the `outputs/` gap** — either accept transcript-anchored citations, or re-export the job
-   from Taiga with `outputs` (and ideally `task_files`, `grader_files`) selected.
+1. ~~Trajectory ID form~~ — **cleared** from the Hub page.
+2. ~~`outputs/` gap~~ — **cleared** by the third archive. Citations in `error_modes.md` are anchored to real
+   `recommendation.md` line numbers. The transcript-reconstruction section below is retained only as a record of
+   what was done before the outputs arrived; 6 of its 16 rows were body-file snapshots and are superseded.
 3. **Scope** — fresh Phase 1 enumeration, or QC of findings already drafted.
 4. **Status of `reviewer_data/pilot_analysis.md`** — it already contains a 7×A / 7×B prevalence matrix.
    It is written from grader rationales and its counts are approximations ("~14/16", "~15/16", "MET or
