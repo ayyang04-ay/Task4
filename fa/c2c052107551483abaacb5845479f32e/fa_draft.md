@@ -5,7 +5,7 @@ non-discriminating items dismissed, second paragraph anchored on exemplar runs.
 MODEL-SIDE ONLY. All grading-document and reference-solution findings are excluded by instruction and
 live in calibration.md; nothing below asserts anything about how the runs were scored.
 LABELS: this task's grading document uses A1–A7 for *items*, so trajectories are "run NN (hex)".
-Counts: paragraph 1 = 12 sentences, paragraph 2 = 12 sentences. Evidence in error_modes.md / item_matrix.md.
+Counts: paragraph 1 = 12 sentences, paragraph 2 = 10 sentences. Evidence in error_modes.md / item_matrix.md.
 
 ## What did the model do wrong?
 
