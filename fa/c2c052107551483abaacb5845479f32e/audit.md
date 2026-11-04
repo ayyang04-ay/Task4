@@ -97,3 +97,41 @@ and it produced a tidy four-run finding where the truth is uniform across the pa
 Four errors found across two passes, all of mine, all running the same way: a pattern substituted for reading, and
 every time the pattern produced a cleaner finding than the truth. Pass 2 found one new failure and it was in the
 pass-1 correction itself, which is the strongest argument for the third pass rather than for declaring this clean.
+
+---
+
+# Audit pass 3 — clean
+
+Pass 3 targeted every claim not yet tested adversarially, plus one more net on the counts pass 2 confirmed.
+**No new factual errors.** One stylistic redundancy fixed.
+
+| Check | Result |
+|---|---|
+| Run 03 `:153` "not among the registered outcome measures" — does this state the endpoint-inventory fact and break the 14/16? | **No.** In context it concerns the Day-29 neutralisation fold rise in the unadjuvanted arm (1.07 vs 0.93), not protection endpoints. 14/16 stands |
+| "rather than the antigen on its own" — does every run actually stop the unadjuvanted formulation? | **Yes, all 16, on line 1.** 15 say "stop", run 06 says "retire" |
+| Does A6's wording support my two-part characterisation? | **Yes**, grader_prompt.md `:74`: "The correct answer states that no outcome measure is a protection/efficacy/challenge endpoint — every measure is serological or systems-biology — and, if it discusses the interferon/gene signature, keeps it as a predictor of peak HAI titer (a surrogate) rather than a validated [correlate]". The document puts the absence first and the restraint second; my draft reverses the order, which changes nothing about the content |
+| Widest net yet on the baseline rule — any fourth run mentioning it? | Surfaced run 10, which on inspection matches at `:450` on the registry-vs-dossier wording mismatch ("combined summed read counts" vs "the mean of the two draws") in its data-quality annex. That is a different point and not a discharge of the dose-1/dose-2 difference. **13/16 and "only 04, 09 and 14" both hold** |
+| Stale narrower phrasing in paragraph 2 ("which 03, 05, 09 and 11 all have") | Not false, but narrower than the verified fact and redundant against paragraph 1. Changed to "which all sixteen have" |
+
+## Final tally across three passes
+
+Four factual errors, all mine, all in the same direction — a pattern standing in for reading, each time yielding a
+tidier finding than the truth:
+
+1. 15/16 → **14/16** (run 08 states it in wording the screen missed).
+2. "every run proposes a bridging study" → **false**, never checked before asserting.
+3. The pass-1 correction "four runs set it aside and propose nothing" → **all 16 do**; keyword hits in set-aside
+   rows were read as proposals.
+4. "7.3 read as sub-protective" in every run → explicit framing in 8; narrowed to what all 16 do.
+
+Plus three caught before pass 1: M3 at 8/16 → 4/16; the dose-sparing over-claim at 3 runs → 1 run; and the
+pre-outputs transcript reconstruction, superseded.
+
+Every count now in fa_draft.md has been tested with at least two patterns of differing looseness, and every
+"every run" claim has been checked against all 16 individually rather than inferred.
+
+## Still not independently verified
+
+That supplement figures S43–S58 are physically absent, and that the Golden scored 0.78 as a deliverable. Asserted
+by the Taiga env linter and independently by several runs and their graders; I never rendered the PDF. Confined to
+calibration.md and absent from the FA.

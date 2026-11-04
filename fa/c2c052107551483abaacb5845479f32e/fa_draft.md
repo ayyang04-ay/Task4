@@ -1,4 +1,4 @@
-# FA draft v7 — H7N9 next-work recommendation, job 30f4652b (16 × Opus 5.5)
+# FA draft v8 — H7N9 next-work recommendation, job 30f4652b (16 × Opus 5.5)
 
 RETYPE, DO NOT TRANSCRIBE.
 SCOPE: model conduct only, load-bearing failures only, anchored on the weakest runs — 03 (890bbf23) and
@@ -7,7 +7,7 @@ CUT BY INSTRUCTION as immaterial, retained in error_modes.md: comparator-arm ker
 characterised (13/16, never misused); "time to protection" treated as measurable (4/16); run 12's
 antigen-sparing over-claim (1/16). Grading-document findings stay in calibration.md, unreferenced here.
 Counts: paragraph 1 = 15 sentences, paragraph 2 = 10 sentences.
-AUDITED TWICE: see audit.md. Four claims were wrong across v5-v6 and are corrected here: 15/16 -> 14/16;
+AUDITED THREE TIMES; pass 3 found no new factual errors: see audit.md. Four claims were wrong across v5-v6 and are corrected here: 15/16 -> 14/16;
 the false claim that every run proposed a bridging study; its over-correction to "four runs"; and
 "read as sub-protective" narrowed to what all 16 actually do.
 
@@ -39,8 +39,8 @@ the weakest runs a design call and a deployment call rest on a step the run neve
 Run 16 (9993e8bb) shows what the first item needed, and run 14 (f8782a66) shows what the second needed. On A6 the
 line to write is a plain one: all fifteen outcome measures in the registry are serology, cytokines or gene counts,
 not one of them measures protection, efficacy or challenge, and that gap — not the shakiness of any single titre —
-is what a bridging study would be for. It belongs in the section on where the data fall short, which 03, 05, 09
-and 11 all have, rather than in a table at the back. Every run already behaved as though it knew this, so writing
+is what a bridging study would be for. It belongs in the section on where the data fall short, which all sixteen
+have, rather than in a table at the back. Every run already behaved as though it knew this, so writing
 it down is what turns the caution into a finding, and it is what would have shown that setting efficacy and
 challenge aside, as all sixteen do, still leaves something to close. On the gene counts, run 14 does the whole job in one sentence: it names the two baselines, points out
 that the dose-2 convention would if anything find fewer genes, and backs the direction with cytokine fold changes
