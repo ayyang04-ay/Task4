@@ -13,36 +13,28 @@ the false claim that every run proposed a bridging study; its over-correction to
 
 ## What did the model do wrong?
 
-All 16 runs get the primary verdict right: carry forward the AS03-adjuvanted two-dose regimen rather than the
-antigen alone, stop the unadjuvanted formulation, and flag durability and breadth as open questions. All 16 also
-get right the judgment the task was built around. Each one treats the interferon signature as a predictor of HAI
-titre and refuses to promote it to a protection marker, and several go further than the Golden by showing that
-Table S186 pools both A/H7N9 arms, so its "predictor" really marks AS03 receipt. The failures are narrower.
+All 16 runs reach the correct primary verdict: carry forward the AS03-adjuvanted two-dose regimen, stop the
+unadjuvanted formulation, and name durability and breadth as open.
 
-1. **Only 2 of 16 say what the trial actually measured.** The record holds serology, cytokines and gene counts
-   and stops there: no protection, efficacy or challenge endpoint anywhere in it. Run 08 (f9779a6c) `:354` and
-   run 16 (9993e8bb) `:304` state this, and both put it in a set-aside row rather than the gaps section that
-   every run has. The two weakest runs, 03 (890bbf23) and 05 (b07ef105), leave it out, as does median run 09
-   (9687c0b1). Median run 11 (60c1bbbc) `:115` makes a different and weaker claim, that no correlate of
-   protection has been established — a point about how to read a titre rather than about what the study
-   measured.
+1. **2/16 state that the trial measured no protection endpoint** — run 08 (f9779a6c) `:354` and run 16
+   (9993e8bb) `:304` — and both put it in a set-aside row rather than their gaps section. 14/16 leave it out,
+   including both weakest runs, 03 (890bbf23) and 05 (b07ef105), and median run 09 (9687c0b1). 1/16, median run
+   11 (60c1bbbc) `:115`, substitutes a weaker claim: that no correlate of protection has been established, which
+   is a point about reading a titre.
 
-2. **All 16 file the protection question under "set aside" rather than answering it.** Each run puts field
-   efficacy and human challenge in its set-aside section on feasibility or ethics grounds: 03 `:391`–`:392`,
-   05 `:342`, 09 `:330`, 11 `:368`, and the same across the other twelve. Only 06, 09 and 12 gesture at a
-   nonclinical or immunobridging route, each one hedged or postponed — 12 `:308` has it "can wait for pivotal
-   planning". So 14 runs leave the gap unstated, and all 16 leave it unworked.
+2. **16/16 set aside field efficacy and human challenge** on feasibility or ethics grounds — 03 `:391`, 05
+   `:342`, 09 `:330`, 11 `:368`, and the same across the other twelve — and **0/16 propose a study to close the
+   gap.** 3/16 (06, 09, 12) mention a nonclinical or immunobridging route, each hedged or postponed; 12 `:308`
+   has it "can wait for pivotal planning".
 
-3. **Only 3 of 16 name the baseline convention before comparing across it.** Runs 04 `:36`, 09 `:75` and 14
-   `:64` name it; the other 13 set the dose-1 and dose-2 gene counts side by side as though they were measured
-   the same way. The room spells the convention out twice, in `dossier.md` §6 and again in the registry's own
-   description of the gene-count measure. The conclusion survives — the innate response really is larger after
-   dose 2, and all 16 cite the IP-10 rise of 4.461 against 1.867, which does sit on one common baseline — so
-   the fault is in the workings.
+3. **13/16 compare dose-1 and dose-2 gene counts across different baselines without naming the convention.**
+   3/16 name it: 04 `:36`, 09 `:75`, 14 `:64`. The room states it twice, in `dossier.md` §6 and in the registry's
+   own description of the gene-count measure. 16/16 still reach the right conclusion and cite the IP-10 rise of
+   4.461 against 1.867, which sits on one common baseline, so the fault is in the workings.
 
-4. **In the two weakest runs that unnamed step reaches a decision.** Run 03 `:137` uses it to make dose-2
-   reactogenicity a measurement requirement, and run 05 `:231` to conclude that dose 2 is unlikely to be
-   gentler. Each run therefore rests a study-design call and a deployment call on a step it never justified.
+4. **2/16 carry that unnamed step into a decision** — and they are the two weakest runs. Run 03 `:137` uses it
+   to make dose-2 reactogenicity a measurement requirement; run 05 `:231` uses it to conclude that dose 2 is
+   unlikely to be gentler.
 
 
 ## What should the model have done?
