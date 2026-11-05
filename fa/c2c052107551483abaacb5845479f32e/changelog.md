@@ -87,3 +87,34 @@ Run ids are lowercase as the Hub displays them: `F9779A6C` to `f9779a6c`, `890BB
 2. Then 4, which is the only one that misstates a run's scientific reasoning.
 3. Then 3, 5, 8, 1.
 4. Then 6, 9, 10, 11.
+
+---
+
+# Changelog — trace-based draft (factual fixes only)
+
+### 1. Heading scope
+FROM: `Failing/low performing runs committed the following errors:`
+TO:   `The following errors recur across the panel:`
+WHY: Two of the three errors are panel-wide, and the draft says so itself ("every run dismisses field
+efficacy ... no run volunteers any compensatory studies"). run08, run16 and run12 are cited under this heading
+and are not low performers. "Low performing" is also a score reference.
+
+### 2. Knowledge gap vs omission
+FROM: `Failed to recognize/note the lack of protection endpoint data.`
+TO:   `Failed to note the lack of protection endpoint data.`
+WHY: The traces disprove a recognition failure. run03 counts the measures and builds a printer so all can be
+read at once; run05 enumerates the results section and checks nothing else is hidden. They recognised it and
+did not write it down, which is the point of the trace.
+
+### 3a. run05's question concerns the cytokines
+FROM: `it is unsure whether the post-second-dose fold changes are references to the pre-vax draw or to D29`
+TO:   `it is unsure whether the post-second-dose cytokine fold changes are referenced to the pre-vax draw or to D29`
+WHY: The registry titles those measures "Fold Change in Cytokine and Chemokine Concentrations From
+Pre-vaccination", which is the wording run05 calls ambiguous. Naming the measure keeps the claim checkable.
+
+### 3b. The comparison it ships is a different measure
+FROM: `It still publishes the cross-dose comparison.`
+TO:   `It still publishes a cross-dose gene count comparison without naming the convention that governs those tables.`
+WHY: The comparison is of DE gene counts, governed by dossier Section 6 and the DE measure's own description,
+not by the cytokine wording it queried. Without this the question raised and the error shipped look like the
+same object, and a reviewer opening the transcript will see they are not.
