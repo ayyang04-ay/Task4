@@ -1,0 +1,15 @@
+# Writer's text with Claude-matched spans marked
+#
+# Marked as  (N)text(end)  where N is the run length in words. A span is flagged when N or more
+# consecutive words match any version of Claude's draft. Minimum run length 5.
+# Everything unmarked is the writer's own phrasing.
+#
+Failing/low performing runs committed the following errors:
+Failed to recognize/note the lack of protection endpoint data. Run03, Run05 are great at logging/inventorying all the data (as a table or a unified section) but do not remark on the lack of protection data. Run08 and run16 do state it, but set it aside rather than acknowledging it as a data gap.
+Fail to propose any work/studies to bridge ⟦7⟧that gap: every run dismisses field efficacy⟧ data/human challenge on feasibility or ethical grounds (which is reasonable) but no run volunteers/suggests any compensatory studies. Run12 is the closest to addressing this: it mentions potential ⟦5⟧nonclinical challenge or passive-transfer study⟧ but then defers it to later planning rather than immediately proposing it.
+Fail to establish a fair/uniform comparison in baselines for DE analysis. Many of the runs leave it unnamed. Run05 notes the question: ⟦9⟧it is unsure whether the post-second-dose fold changes are⟧ references to the pre-vax draw or to D29, notes that ⟦5⟧the registry wording is ambiguous⟧ to this ⟦7⟧point, and says it needs to verify,⟧ but it never actually does it. Within this run, it verifies the gene counts later which means that it re-reads the data room but again fails to revisit its earlier point. ⟦12⟧It still publishes the cross-dose comparison. Run03 arrives at the same omission⟧ but by a different route. ⟦11⟧It parses every gene table out of the supplement and reconciles⟧ against the registry, reads the registry's gene count definition/methods, and accepts/ignores the reference-frame/baseline comparison issue.
+High-performing models should:
+⟦11⟧State what the trial measured: all 15 outcome measures in the⟧ data room were ⟦5⟧serology, cytokines, or gene counts;⟧ note that none of it was protection, efficacy, or challenge endpoints. Run08 and Run16 noted this, but this note should belong in every run as a noted gap, not as a set-aside.
+⟦8⟧Propose a route to close that gap: field⟧ efficacy/human challenge are nonviable, so the answer should be ⟦5⟧a nonclinical challenge, passive-transfer, or⟧ some immunobridging studies. Run12 names one but postpones/defers ⟦5⟧it as the next study⟧ move.
+Name the baseline conventions its using in comparisons (dose 1 or dose 2). Run04, Run09, and Run14 are the only runs that explicitly name their baseline comparisons/conventions.
+⟦6⟧Everything else was already correct in⟧ all 16 runs: ⟦16⟧the adjuvanted regimen as the asset, the day-29 one-dose HAI GMT of 7.3 treated as insufficient⟧ and therefore ⟦10⟧single-dose use rejected, durability and breadth named as open, every⟧ figure/claim ⟦9⟧tied to its source alongside a reasoned set-aside list⟧ (as instructed), ⟦5⟧and the interferon signature kept⟧ s a predictor of HAI titer ⟦7⟧rather than promoted to a protection marker.⟧
