@@ -1,30 +1,46 @@
-# Stylistic tells in the current FA text, independent of verbatim overlap
+# Language-level tells in the current FA text
 
-Ordered by how strongly each signals machine authorship.
+Correction to an earlier version of this file: it blamed the three-bullet architecture. That architecture is
+the writer's. The imperative-colon openers I cited as structural ("State what the trial measured", "Propose a
+route to close that gap") are verbatim matched spans from Claude's draft, i.e. language, not structure. The
+tells below are all at word and phrase level.
 
-1. Three bullets opening with a bare imperative plus colon: "State what the trial measured:", "Propose a
-   experiments to close that gap:", "Name the baseline conventions...". The standard listicle shape.
-2. The failure section repeats one frame three times in the same verb slot: "Failed to recognize/note",
-   "Fail to propose", "Fail to establish". The tense slip between Failed and Fail shows a template being
-   filled rather than sentences being composed.
-3. Eight contrastive "but" pivots, roughly one per unit: great at logging BUT do not remark; do state it BUT
-   set it aside; every run dismisses BUT no run volunteers; mentions potential BUT then defers; says it needs
-   to verify BUT never does; re-reads BUT again fails; noted this BUT should belong; names one BUT postpones.
-   Concede-then-undercut in every item.
-4. The closing catch-all: "Everything else is correct in all 16 runs:" plus five coordinated items in a single
-   57-word comma chain, ending on the most abstract. Exhaustive, symmetrical, bow-tying.
-5. Parenthetical fairness gestures: "(which is reasonable)", "Run12 is the closest to addressing this".
-6. Abstract nominalisations in place of concrete objects: "compensatory studies", "the reference-frame/baseline
-   comparison issue", "a fair/uniform comparison in baselines", "immediately proposing it".
-7. Sixteen slash-pairs. At this density it reads as systematic rather than as a drafter's indecision, and they
-   cluster where the writer is choosing between Claude's word and their own: recognize/note, work/studies,
-   volunteers/suggests, accepts/ignores, open-ended/TBD, subsequent/followup.
-8. Uniform information density. Every sentence carries one fact. No asides, no uncertainty, no connective
-   sentence, no sentence that runs long because the thought was harder.
-9. No stance. No first person, no expectation, no surprise. Uninflected throughout.
+## 1. One reporting verb carries everything
+"notes the question", "notes that the phrasing", "noted this", "noted as open-ended", "do not remark on",
+"acknowledging it as". Six instances of note / remark / acknowledge where a person would vary: said, flagged,
+spotted, called out, or simply "didn't mention".
 
-## Highest-leverage fixes
+## 2. Triadic lists
+"serology, cytokines, or gene counts" - "protection, efficacy, or challenge endpoints" - "nonclinical
+challenge, passive-transfer, or some immunobridging studies" - "durability and breadth noted as
+open-ended/TBD". Four three-item lists in a short text. The most reliable fingerprint in Claude's own output.
 
-Break the three-way symmetry so items differ in length and opening; cut most of the "but" pivots and state the
-failure flat; delete or flatten the closing catch-all; add one sentence of the writer's own judgment. These
-change the architecture, which is what survived the rewording pass that took overlap from 36% to 25%.
+## 3. "rather than" as the universal contrast
+"rather than acknowledging it as a data gap", "rather than immediately proposing it", "rather than as an
+indicator of protection", "not as a set-aside". Five occurrences.
+
+## 4. Wrong collocations - the most diagnostic group
+These read as paraphrase by someone outside the field, and they entered with Claude's text and survived the
+rewording pass:
+- "compensatory studies" - not a term used in vaccine development; bridging work, or a study to cover the gap
+- "performs the same omission" - an omission is made, not performed
+- "ambiguous to this point" - should be "on this point"
+- "establish a fair/uniform comparison in baselines" - concretely, compare counts computed against the same
+  baseline
+
+## 5. Register spikes
+"committed the following errors", "do not remark on", "is the closest to addressing this", "immediately
+proposing it" sit beside "great at logging" and "never actually does it". The unevenness is more noticeable
+than either level on its own.
+
+## 6. Machine connectors
+"the following errors", "which means that", "but by a different route".
+
+## 7. Noun stacks
+"the reference-frame/baseline comparison issue" - four nouns before the verb. "a reasoned set-aside list" -
+three.
+
+## Highest leverage
+Group 4. Those four or five words came in with Claude's text and a detector does not need to match phrasing to
+notice the vocabulary is not a clinician's. Replacing them with what the writer would say aloud to a colleague
+moves this further than another symmetry pass.
