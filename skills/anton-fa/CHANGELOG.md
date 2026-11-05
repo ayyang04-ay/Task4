@@ -122,3 +122,30 @@ Feedback from the client reviewer on a submitted FA, plus the analyst errors mad
   attempting it led to the writer's idiom being misattributed to this skill; and do not generate polished prose
   for the writer, because prose handed over is edited rather than replaced, which leaves long matched runs
   intact. Give bare facts instead.
+
+## 2026-11-05b — official guidance: prevalence floor and the defensibility bar
+
+### Added
+
+- **The bar a failure mode must clear.** Official guidance, as its own section ahead of the reviewer rules:
+  a mode counts only if it appears in **at least 2 trajectories**; **1 to 5 modes** per task; no grader, rubric
+  or golden answer is needed to identify one; modes are **method-based**, naming what was not checked, measured
+  or corrected for rather than that the answer was wrong; each must be **reproducible by a second annotator**
+  from the transcripts, and **if a careful expert could defend the choice it is not a failure mode**; each
+  carries four fields — short name, description in the task's own numbers and file names, the counterfactual,
+  and the trajectory IDs. AI may be used to compare or cluster trajectories.
+- The prevalence floor is an **absolute count of 2** and does not scale with panel size. Panels are 16 runs on
+  tasks built before this change and 8 after it; the floor is 2 either way.
+
+### Changed
+
+- **Prevalence is a gate, not a finding.** Count it to clear the floor, then name the trajectory IDs. The count
+  itself is not reported, per the no-ratios rule.
+- **Order of application.** The defensibility bar runs before the prevalence floor: a defensible choice shared
+  by every trajectory is still not a mode. Worked case recorded — where the prompt asks for studies considered
+  and set aside with reasons and every run sets one aside and gives a reason, no mode survives.
+- **The ledger** (Phase 1d) now carries the four required fields as columns, drops rows below the floor or
+  failing defensibility, and caps at five. The counterfactual belongs to the mode, so where the submission form
+  has a second section it is built from those counterfactuals rather than written separately.
+- **Graded mode demoted to optional context.** A grading document may help locate candidates, but no mode may
+  rest on it and runs are never ranked by score.

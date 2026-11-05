@@ -23,6 +23,9 @@ find modes and where you establish how widespread they are.
 
 Two modes of operation, decided in Phase 0:
 
+Graded mode is **optional context only** since 2026-11: a grading document may help locate candidates, but no
+mode may rest on it, and runs are never ranked by score.
+
 | | **Graded** | **Trajectory-only** |
 |---|---|---|
 | When | A writer-authored grading document scored the runs | Default grader, or no meaningful grading document |
@@ -33,6 +36,26 @@ Two modes of operation, decided in Phase 0:
 
 Prevalence ranking, the error taxonomy and the evidence standard are identical in
 both modes.
+
+## The bar a failure mode must clear (official guidance, 2026-11)
+
+| Requirement | Detail |
+|---|---|
+| Prevalence floor | A mode counts only if it appears in **at least 2 trajectories**. One-off errors are not FA material, however large. The floor is an absolute count and does not scale with panel size: panels are 16 runs on tasks built before the 2026-11 change and 8 on those after it, and the floor is 2 either way |
+| Count | **1 to 5 modes** per task |
+| No apparatus needed | No grader, rubric or golden answer is required to identify a mode. Where a grading document exists it is context only: never the basis for a mode, never a way to rank runs |
+| Method-based | Name what was **not checked, measured or corrected for**. That the final answer came out wrong is not a mode |
+| Second-annotator reproducible | Stated precisely enough that another annotator reading the transcripts can say whether the mistake was made. **If a careful expert could defend the choice, it is not a failure mode** |
+| Four required fields | A short name; a description in the task's own numbers and file names; the counterfactual; the trajectory IDs it appears in |
+| Tooling | AI may be used to compare or cluster trajectories |
+
+The defensibility bar is the strictest of these and does the most work. Apply it to every candidate before the
+prevalence floor, because a defensible choice shared by every trajectory is still not a mode. A worked case:
+where a prompt asks for studies considered and set aside with reasons, and every run sets a study aside and
+gives a reason, no mode survives — an expert defends that reading without difficulty.
+
+Prevalence is now a gate, not a finding. Count it to clear the floor of 2, then name the trajectory IDs. Do not
+report the count.
 
 ## What the FA may contain (reviewer-set, 2026-11)
 
@@ -173,10 +196,15 @@ because trajectories routinely read a file without naming it in their output. Se
 
 ### 1d. The error-mode ledger
 
-One row per mode, ordered by prevalence first and consequence second.
+One row per mode, ordered by prevalence first and consequence second. Drop any row appearing in fewer than two
+trajectories, and any row a careful expert could defend. Keep at most five.
 
-| # | Mode | Class | Prevalence | Consequence | Evidence per trajectory | Correct move | Graded? |
+| # | Short name | Class | Trajectory IDs | Not checked / measured / corrected for | Description in task's own numbers and files | Counterfactual | Consequence |
 |---|---|---|---|---|---|---|---|
+
+The last four columns are the four fields the official guidance requires. The counterfactual belongs to the
+mode, so where the submission form has a second section for what the model should have done, that section is
+built from these counterfactuals rather than written separately.
 
 - **Class** — from `references/error-taxonomy.md`.
 - **Prevalence** — `k of n`, with the trajectory IDs listed.
