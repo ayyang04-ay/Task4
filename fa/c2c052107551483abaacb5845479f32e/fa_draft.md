@@ -37,26 +37,30 @@ dose 2 is unlikely to be gentler.
 ## What should the model have done?
 
 State what the trial measured. The fifteen outcome measures in the registry record are serology, cytokines or
-gene counts, and none is a protection, efficacy or challenge endpoint. run03 and run05 already had this in
-front of them, so the correction is only to write it into the section on where the data fall short that every
-run has, rather than leaving it out or placing it in a set-aside row as run08 and run16 did.
+gene counts, and not one of them is a protection, efficacy or challenge endpoint. That absence, rather than the
+weakness of any individual titre, is what a bridging study exists to close, and it belongs in the section on
+where the data fall short. run08 (f9779a6c) and run16 (9993e8bb) are the runs that reach this conclusion, each
+stating that the package carries immunogenicity only.
 
-Propose a route to close that gap. Field efficacy and human challenge are genuinely foreclosed, so what remains
+Propose a route to close it. Field efficacy and human challenge are genuinely foreclosed here, so what remains
 is a nonclinical challenge, passive-transfer or immunobridging path with a stated acceptance criterion. run12
-names one; putting it forward as the next study rather than deferring it is the move.
+(1596ccf2) identifies the right instrument, naming a nonclinical challenge or passive-transfer study linking
+titres to protection.
 
-Name the baseline convention before comparing across it. run14 (f8782a66) does the whole thing in one sentence:
-it names both baselines, points out that the dose-2 convention would if anything return fewer genes because
-dose 1 averages two draws where dose 2 uses one, and corroborates the direction with cytokine fold changes
-measured from a single baseline. run09 (9687c0b1) makes the same point from the other end, that dose 1 drew on
-two baseline samples and so had more power rather than less. run04 (0842f297) flags the caveat plainly. For
-run05 the correction is smaller still: close the question it had already opened.
+Name the baseline convention before comparing across it. run14 (f8782a66) models this in a single sentence: it
+names both baselines, observes that the dose-2 convention would if anything return fewer genes because dose 1
+averages two draws where dose 2 uses one, and corroborates the direction with cytokine fold changes measured
+from a common pre-vaccination baseline. The registry supports the argument independently, since the Day 29 draw
+sits at a handful of differentially expressed genes against the first-dose baseline, so the two reference
+frames are close to equivalent in this dataset. run09 (9687c0b1) reaches the same conclusion from statistical
+power, noting that dose 1 drew on two baseline samples and so had more of it rather than less, and run04
+(0842f297) states the caveat plainly.
 
-One thing the runs were right to decline. run08, run11 (60c1bbbc) and run16 each independently reconstruct the
-supplement's printed page labels and establish that the figures carrying the signature-to-peak-HAI correlation
-are absent from the mounted file, and run11 cross-checks that the missing labels account exactly for the offset
-between printed and physical numbering. Declining to quote a coefficient therefore rested on a verified
-property of the data room, not on a misreading of it.
+The panel was also right to decline the signature-to-titre correlation. run08, run11 (60c1bbbc) and run16 each
+independently reconstruct the supplement's printed page labels and establish that the figures carrying that
+correlation are absent from the mounted file, with run11 cross-checking that the missing labels account exactly
+for the offset between printed and physical numbering. Declining to quote a coefficient was therefore grounded
+in a verified property of the data room.
 
 Everything else was already correct in every run: the adjuvanted regimen as the asset, the one-dose Day 29 HAI
 GMT of 7.3 treated as insufficient and single-dose use rejected, durability and breadth named as open, every
