@@ -99,3 +99,27 @@ The other items I raised were withdrawn as over-reads, not errors:
 Everything else in both paragraphs was verified and unchanged: the 2/16 with A08 and A16, 14/16, the
 all-runs dismissal, 0/16 proposing a study, 3/16 mentioning a route, 13/16 on the baselines, 2/16 carrying it
 forward with A03 and A05, the 15 outcome measures, and the whole closing list of what all 16 got right.
+
+---
+
+# QC round 3 — trace-based draft
+
+| # | Claim | Verdict | Correction stated as fact |
+|---|---|---|---|
+| 1 | "Failing/low performing runs committed the following errors" | **scoping wrong** | Two of the three errors are panel-wide, not confined to weaker runs. The draft says so itself two lines later: "every run dismisses field efficacy ... no run volunteers any compensatory studies". The baseline omission also covers runs across the range, not only run03 and run05. And run08, run16 and run12, all cited under this heading, are not low performers. "Low performing" is also a score reference, which the reviewer asked to drop. Fix: head the list with the error, not the runs, e.g. "The following errors recur across the panel" |
+| 2 | "Failed to recognize/note the lack of protection endpoint data" | **"recognize" is wrong** | The trace disproves a knowledge gap. run03 counts the measures and builds a printer so all can be read at once; run05 enumerates the results section and checks nothing else is hidden. Both recognised what was there. The failure is in not remarking on it, which the draft's own next sentence gets right. Drop "recognize" and keep "note" |
+| 3 | run05 "is unsure whether the post-second-dose fold changes are references to the pre-vax draw or to D29" | **accurate to the transcript, but it is a different measure from the comparison it then publishes** | run05's question is about the cytokine fold changes: the registry titles those outcome measures "Fold Change in Cytokine and Chemokine Concentrations From Pre-vaccination", which is the wording it calls ambiguous. The cross-dose comparison it publishes is of DE gene counts, governed by dossier Section 6 and the DE outcome measure's own description. Same reference-frame issue, different object. A reviewer checking the transcript will see that the question raised and the comparison shipped are not the same measure. Safer framing: run05 raises the reference-frame ambiguity on the cytokine fold changes and never resolves it, then publishes a cross-dose gene-count comparison without naming the convention governing those tables. My own draft introduced this slippage |
+| 4 | run03, run05 inventory the data but do not remark on the lack of protection data | **supported** | run03 T003 and T005; run05 T041 |
+| 5 | run08 and run16 state it but set it aside | **supported** | run08 line 354, run16 line 304, both in set-aside rows |
+| 6 | Every run dismisses field efficacy / human challenge; no run proposes compensatory studies | **supported** | All 16 |
+| 7 | run12 mentions a nonclinical challenge or passive-transfer study then defers it | **supported** | run12 line 308 |
+| 8 | "Many of the runs leave it unnamed" | **supported** | Avoids the ratio and is accurate |
+| 9 | run05 verifies gene counts later, re-reading the source, and does not revisit the point | **supported** | run05 T065 |
+| 10 | run03 parses every gene table, reconciles against the registry, reads the gene-count definition, and leaves the baseline issue unapplied | **supported** | run03 T026, T027, T030, T051. Precisely: it accepts the threshold half of the definition and leaves the reference-frame half of the same description unapplied |
+
+## Must-fix, ranked
+
+1. Re-scope the heading (row 1). As written it attributes panel-wide errors to weak runs, and contradicts the
+   draft's own "every run" two lines later.
+2. Drop "recognize" (row 2). The trace shows recognition; the failure is the omission.
+3. Separate the two measures in the run05 trace (row 3), or phrase it as the reference-frame issue generally.
