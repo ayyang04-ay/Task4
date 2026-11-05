@@ -1,62 +1,64 @@
-# FA draft v8 — H7N9 next-work recommendation, job 30f4652b (16 × Opus 5.5)
+# FA draft — trace-based, no scores, no ratios. Job 30f4652b
 
-RETYPE, DO NOT TRANSCRIBE.
-SCOPE: model conduct only, load-bearing failures only, anchored on the weakest runs — 03 (890bbf23) and
-05 (b07ef105), both 0.77 — and the median pair, 09 (9687c0b1) and 11 (60c1bbbc), both 0.84.
-CUT BY INSTRUCTION as immaterial, retained in error_modes.md: comparator-arm keratin/hornerin never
-characterised (13/16, never misused); "time to protection" treated as measurable (4/16); run 12's
-antigen-sparing over-claim (1/16). Grading-document findings stay in calibration.md, unreferenced here.
-Counts: paragraph 1 = 15 sentences, paragraph 2 = 10 sentences.
-AUDITED THREE TIMES; pass 3 found no new factual errors: see audit.md. Four claims were wrong across v5-v6 and are corrected here: 15/16 -> 14/16;
-the false claim that every run proposed a bridging study; its over-correction to "four runs"; and
-"read as sub-protective" narrowed to what all 16 actually do.
+Labels are runNN plus the short run id. Transcript locations are in transcript_traces.md; verification for
+every factual claim is in verify_checklist.md. Score and prevalence language deliberately absent, including
+"weakest-scoring", which is a score reference.
 
 ## What did the model do wrong?
 
-All 16 runs reach the correct primary verdict: carry forward the AS03-adjuvanted two-dose regimen, stop the
-unadjuvanted formulation, and name durability and breadth as open.
+Every run reached the correct primary verdict: carry forward the AS03 adjuvanted two-dose regimen rather than
+the antigen alone, and flag durability and breadth as open.
 
-1. **2/16 state that the trial measured no protection endpoint** — run 08 (f9779a6c) `:354` and run 16
-   (9993e8bb) `:304` — and both put it in a set-aside row rather than their gaps section. 14/16 leave it out,
-   including both weakest runs, 03 (890bbf23) and 05 (b07ef105), and median run 09 (9687c0b1). 1/16, median run
-   11 (60c1bbbc) `:115`, substitutes a weaker claim: that no correlate of protection has been established, which
-   is a point about reading a titre.
+The trial's lack of any protection endpoint goes unstated, and this is not a knowledge gap. run03 (890bbf23)
+counts the registry's outcome measures early in its episode and remarks that there are only fifteen, then builds
+a table printer so all of them can be read at once. run05 (b07ef105) enumerates what the results section holds
+and goes back to confirm nothing else is hidden there. Both therefore had the complete measure inventory in one
+view, by their own construction, and neither wrote the absence into the proposal. run08 (f9779a6c) and run16
+(9993e8bb) do state it, but place it in a set-aside row rather than the section on where the data fall short.
+The divergence is at the writing stage, not the analysis.
 
-2. **16/16 set aside field efficacy and human challenge** on feasibility or ethics grounds — 03 `:391`, 05
-   `:342`, 09 `:330`, 11 `:368`, and the same across the other twelve — and **0/16 propose a study to close the
-   gap.** 3/16 (06, 09, 12) mention a nonclinical or immunobridging route, each hedged or postponed; 12 `:308`
-   has it "can wait for pivotal planning".
+No run proposes work to close that gap. Every run dismisses field efficacy and human challenge on feasibility
+or ethics grounds, which is defensible, but none puts anything in their place. run12 (1596ccf2) comes closest:
+it names a nonclinical challenge or passive-transfer study and then defers it to pivotal planning rather than
+proposing it as the next study.
 
-3. **13/16 compare dose-1 and dose-2 gene counts across different baselines without naming the convention.**
-   3/16 name it: 04 `:36`, 09 `:75`, 14 `:64`. The room states it twice, in `dossier.md` §6 and in the registry's
-   own description of the gene-count measure. 16/16 still reach the right conclusion and cite the IP-10 rise of
-   4.461 against 1.867, which sits on one common baseline, so the fault is in the workings.
-
-4. **2/16 carry that unnamed step into a decision** — and they are the two weakest runs. Run 03 `:137` uses it
-   to make dose-2 reactogenicity a measurement requirement; run 05 `:231` uses it to conclude that dose 2 is
-   unlikely to be gentler.
+The baseline convention governing the gene-count tables goes unnamed before runs compare across it. run05
+raises the question itself, early on: it is unsure whether the post-second-dose fold changes are referenced to
+the pre-vaccination draw or to Day 29, notes the registry wording is ambiguous on the point, and says it needs
+to verify. It never returns to it. Later in the same episode it re-verifies its gene counts against the
+registry for numerical accuracy, which means re-reading the outcome measure whose own description states the
+reference-frame rule, and it still publishes the cross-dose comparison. run03 arrives at the same omission
+differently: it parses every gene table out of the supplement and reconciles the counts against the registry,
+then reads the registry's gene-count definition, accepts the threshold half of it as sound, and moves on,
+leaving the reference-frame half of the same description unapplied. Both carry the comparison into their
+recommendations, run03 into a requirement to measure dose-2 reactogenicity directly and run05 into a claim that
+dose 2 is unlikely to be gentler.
 
 ## What should the model have done?
 
-A16 (9993e8bb) is the only run that models the first point and A14 (f8782a66) the third; no run models the second.
+State what the trial measured. The fifteen outcome measures in the registry record are serology, cytokines or
+gene counts, and none is a protection, efficacy or challenge endpoint. run03 and run05 already had this in
+front of them, so the correction is only to write it into the section on where the data fall short that every
+run has, rather than leaving it out or placing it in a set-aside row as run08 and run16 did.
 
-The runs should have stated what the trial measured. All 15 outcome measures in the registry are serology,
-cytokines or gene counts, and none is a protection, efficacy or challenge endpoint. That absence, rather than the
-weakness of any single titre, is what a bridging study exists to close. It belongs in the section on where the
-data fall short that every run already has, not in a set-aside row where A08 and A16 put it.
+Propose a route to close that gap. Field efficacy and human challenge are genuinely foreclosed, so what remains
+is a nonclinical challenge, passive-transfer or immunobridging path with a stated acceptance criterion. run12
+names one; putting it forward as the next study rather than deferring it is the move.
 
-They should then have named a route to close it. Field efficacy and human challenge really are foreclosed, so what
-remains is a nonclinical challenge, passive-transfer or immunobridging path with a stated acceptance criterion.
-A12 (1596ccf2) names one and then postpones it; naming it as the next study is the move.
+Name the baseline convention before comparing across it. run14 (f8782a66) does the whole thing in one sentence:
+it names both baselines, points out that the dose-2 convention would if anything return fewer genes because
+dose 1 averages two draws where dose 2 uses one, and corroborates the direction with cytokine fold changes
+measured from a single baseline. run09 (9687c0b1) makes the same point from the other end, that dose 1 drew on
+two baseline samples and so had more power rather than less. run04 (0842f297) flags the caveat plainly. For
+run05 the correction is smaller still: close the question it had already opened.
 
-On the gene counts, the baseline convention should have been named before comparing across it. A14 does this in
-one sentence: it names the two baselines, notes that the dose-2 convention would if anything find fewer genes, and
-backs the direction with cytokine fold changes measured from a single pre-vaccination baseline. A09 (9687c0b1)
-adds that dose 1 drew on two baseline samples and so had more power, not less. The registry also reports Day 29
-against the first-dose baseline at 11 differentially expressed genes across six cell types, against 3,024 on Day
-2, so the two reference points are nearly identical and the comparison holds once that is said.
+One thing the runs were right to decline. run08, run11 (60c1bbbc) and run16 each independently reconstruct the
+supplement's printed page labels and establish that the figures carrying the signature-to-peak-HAI correlation
+are absent from the mounted file, and run11 cross-checks that the missing labels account exactly for the offset
+between printed and physical numbering. Declining to quote a coefficient therefore rested on a verified
+property of the data room, not on a misreading of it.
 
-Everything else was already right in all 16: the adjuvanted regimen as the asset, the Day-29 one-dose HAI GMT of
-7.3 treated as insufficient and single-dose use rejected, durability and breadth named as open, every figure tied
-to its source alongside a reasoned set-aside list, and the interferon signature kept as a predictor of HAI titre
-rather than promoted to a protection marker.
+Everything else was already correct in every run: the adjuvanted regimen as the asset, the one-dose Day 29 HAI
+GMT of 7.3 treated as insufficient and single-dose use rejected, durability and breadth named as open, every
+figure tied to its source alongside a reasoned set-aside list, and the interferon signature kept as a predictor
+of HAI titre rather than promoted to a protection marker.
