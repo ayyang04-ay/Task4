@@ -38,25 +38,25 @@ unadjuvanted formulation, and name durability and breadth as open.
 
 ## What should the model have done?
 
-1. State what the trial measured. All 15 outcome measures in the registry are serology, cytokines or gene
-   counts, and none is a protection, efficacy or challenge endpoint. Run 16 (9993e8bb) is the only model for
-   this, and the line belongs in the gaps section every run already has, not in a set-aside row.
+A16 (9993e8bb) is the only run that models the first point and A14 (f8782a66) the third; no run models the second.
 
-2. Propose a route to close that gap. Field efficacy and human challenge really are foreclosed, so the answer
-   is a nonclinical challenge, passive-transfer or immunobridging path with a stated acceptance criterion. Run
-   12 (1596ccf2) :308 names one and then defers it; naming it as the next study is the move.
+The runs should have stated what the trial measured. All 15 outcome measures in the registry are serology,
+cytokines or gene counts, and none is a protection, efficacy or challenge endpoint. That absence, rather than the
+weakness of any single titre, is what a bridging study exists to close. It belongs in the section on where the
+data fall short that every run already has, not in a set-aside row where A08 and A16 put it.
 
-3. Name the baseline convention before comparing across it. Run 14 (f8782a66) :64 does it in one sentence: it
-   names the two baselines, notes that the dose-2 convention would if anything find fewer genes, and backs the
-   direction with cytokine fold changes on a common baseline. Run 09 (9687c0b1) :75 adds that dose 1 had two
-   baseline draws and so more power, not less.
+They should then have named a route to close it. Field efficacy and human challenge really are foreclosed, so what
+remains is a nonclinical challenge, passive-transfer or immunobridging path with a stated acceptance criterion.
+A12 (1596ccf2) names one and then postpones it; naming it as the next study is the move.
 
-4. Settle it from the registry, which decides the point either way. Against the first-dose baseline, Day 29
-   shows 11 differentially expressed genes across six cell types against 3,024 on Day 2, so the Day-29
-   reference is effectively pre-vaccination. One sentence of that leaves the conclusion standing and gives the
-   calls in 03 :137 and 05 :231 a basis.
+On the gene counts, the baseline convention should have been named before comparing across it. A14 does this in
+one sentence: it names the two baselines, notes that the dose-2 convention would if anything find fewer genes, and
+backs the direction with cytokine fold changes measured from a single pre-vaccination baseline. A09 (9687c0b1)
+adds that dose 1 drew on two baseline samples and so had more power, not less. The registry also reports Day 29
+against the first-dose baseline at 11 differentially expressed genes across six cell types, against 3,024 on Day
+2, so the two reference points are nearly identical and the comparison holds once that is said.
 
-Everything else was already right in all 16: the adjuvanted regimen as the asset, the Day-29 one-dose HAI GMT
-of 7.3 treated as insufficient and single-dose use rejected, durability and breadth named as open, every figure
-tied to its source alongside a reasoned set-aside list, and the interferon signature kept as a predictor of HAI
-titre rather than promoted to a protection marker.
+Everything else was already right in all 16: the adjuvanted regimen as the asset, the Day-29 one-dose HAI GMT of
+7.3 treated as insufficient and single-dose use rejected, durability and breadth named as open, every figure tied
+to its source alongside a reasoned set-aside list, and the interferon signature kept as a predictor of HAI titre
+rather than promoted to a protection marker.
