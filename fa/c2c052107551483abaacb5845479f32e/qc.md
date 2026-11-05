@@ -76,3 +76,26 @@ one. A reviewer reading both will catch it. Nothing else conflicts.
 4. **The A12 sentence** (row 5). It names a route and defers it; naming it as the next study is the fix.
 5. **A09 "different point"** (row 7) → the same point from the other end.
 6. Typos.
+
+---
+
+# Resolution — what shipped
+
+Writer applied the A04 correction ("A04, A09 and A14 are the only runs that explicitly name their baseline
+conventions"), which was the one factual error in the final draft: paragraph 1's 13/16 leaves 3 runs, and A04
+`:36` names the convention alongside A09 and A14.
+
+The other items I raised were withdrawn as over-reads, not errors:
+
+- "carry these comparisons forward into their final decision" — "final decision" reasonably denotes the
+  recommendations the memo lands on, which include the study-design and deployment calls. Paragraph 1's first
+  sentence concerns the primary carry-forward verdict specifically, so the two do not conflict.
+- "A12 names one but postpones/defers it as the next study move" — the intended contrast is carried by
+  "names one but", and the sentence is recoverable.
+- "Median-scoring runs (such as A11)" — "such as" does not assert further instances.
+- "a nonclinical or immunobridging plan ... don't provide a plan" and the typos — writer's call; hand-written
+  texture is deliberate.
+
+Everything else in both paragraphs was verified and unchanged: the 2/16 with A08 and A16, 14/16, the
+all-runs dismissal, 0/16 proposing a study, 3/16 mentioning a route, 13/16 on the baselines, 2/16 carrying it
+forward with A03 and A05, the 15 outcome measures, and the whole closing list of what all 16 got right.
